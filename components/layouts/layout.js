@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
 
     const Div = styled.div({
     padding: "0",
-    marginTop: "75px"
+    marginTop: "73px"
   });
 
   const router = useRouter();
