@@ -1,6 +1,6 @@
 :root {
-  --primary-color: rgb(29, 114, 219);
-  --secondary-color: #323d5a;
+  --primary-color: #004aad;
+  --secondary-color: #ffffff;
 }
 
 * {
@@ -30,6 +30,22 @@ button {
 }
 img {
   font-size: small;
+}
+
+.primary_color {
+  color: var(--primary-color);
+}
+
+.secondary_color {
+  color: var(--secondary-color);
+}
+
+.primary_bg {
+  background-color: var(--primary-color);
+}
+
+.secondary_bg {
+  background-color: var(--secondary-color);
 }
 
 @media only screen and (min-width: 1200px) {
