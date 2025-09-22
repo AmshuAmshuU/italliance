@@ -1,0 +1,13 @@
+.footer_container{
+    background-color: #edebe6;
+    line-height: 50px;
+}
+.footer_top_container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    width: 100%;
+    padding: 20px;
+}
+.footer_cols{
+    width: fit-content;
+}

@@ -1,8 +1,9 @@
+import HeroSection from '@/components/aboutUs/heroSection'
 import React from 'react'
 
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <div><HeroSection /></div>
   )
 }
 

@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import styled from "@emotion/styled";
+import Navbar from "./navbar";
+import Footer from "./footer";
 const Layout = ({ children }) => {
 
     const Div = styled.div({
     padding: "0",
+    marginTop: "75px"
   });
 
   const router = useRouter();
-  const [showProfile, setShowProfile] = useState(false);
-  const isErrorPage = router.route === "/_error";
+  // const isErrorPage = router.route === "/_error";
 
   return (
     <div
@@ -18,15 +20,13 @@ const Layout = ({ children }) => {
       }}
       className="d-flex flex-column position-relative"
     >
-      {/* <Navbar showProfile={showProfile} setShowProfile={setShowProfile} /> */}
+      <Navbar />
       <Div
         className="flex-grow-1"
-        showProfile={showProfile}
-        setShowProfile={setShowProfile}
       >
         {children}
       </Div>
-      {/* <Footer isErrorPage={isErrorPage} /> */}
+      <Footer />
     </div>
   );
 };
